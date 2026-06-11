@@ -494,8 +494,9 @@ mark {
     grid-template-columns: 1fr;
   }
 }
-
-.pub-title {
+.pub-title,
+.pub-title:visited,
+.pub-title:active {
   display: block;
   color: var(--text);
   text-decoration: none;
@@ -506,13 +507,20 @@ mark {
 }
 
 .pub-title:hover {
-  color: var(--red);
-  text-decoration: underline;
+  color: var(--text);
+  text-decoration: none;
 }
 
-sup {
-  font-size: 0.72em;
-  vertical-align: super;
-  line-height: 0;
-  margin-left: 1px;
+.if-badge {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  color: var(--red);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.pub-list li {
+  position: relative;
+  padding: 0 58px 16px 38px;
 }
