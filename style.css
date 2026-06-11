@@ -494,3 +494,25 @@ mark {
     grid-template-columns: 1fr;
   }
 }
+
+.pub-title {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1.35;
+  margin-bottom: 7px;
+}
+
+.pub-title:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+sup {
+  font-size: 0.72em;
+  vertical-align: super;
+  line-height: 0;
+  margin-left: 1px;
+}
